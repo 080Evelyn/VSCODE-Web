@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+    <title>Sectional Check</title>
+    <style>
+        .oruko{
+    color: brown;    
+}
+section > h1{ 
+    color: green; 
+     /* Child relationship, i.e, direct. It can also be more
+         than one selector e.g classes, but there
+           must be no spaces, else it becomes a descendant relationship */
+}
+article + p{
+    color: red; 
+     /* Next sibling relationship; usually having the same indentation */
+}
+section h2{
+    color: yellowgreen;
+      /* Descendant relationship which depicts child, grandchildren etc.  */
+}
+h2:nth-child(even){
+    color: powderblue; 
+     /* Pseudo class selector */
+}
+footer:nth-child(3n + 2){
+    color: orange;
+    /* when the nth terms is replaced with "hover" as
+         in (footer:hover), the color only changes when the cusor is on it on the page */
+}
+footer h2:hover{
+    color: purple;
+}
+#checkout{
+    color: tomato;
+}
+
+ /* (2n + b) means 2 is the number of child elements
+     to circle while b is the position of element to color e.g    */
+     /* It should be noted that the hierachy of specificity is 
+     selector --> class --> Id --> inline. Their power is in ascending order */
+    </style>
+    <section>
+        <h1 align="center"> SAFARI Company Ltd.</h1>
+        <h2>About Us</h2>
+        <h2>Portfolio</h2>
+    </section>
+    <footer> 
+    <h2 class="oruko"> Contacts</h2>
+    <h2 id="checkout"> Alumni</h2>
+    <article>Tweet</article>
+    <p>Like us on </p>
+<a href="Heading Hierachy.html"> Family Ties</a>
+</footer>
+<footer>
+    <a href="Simple Textual Content.html"> Textual Content</a>
+</footer>
+<footer>
+    <h2>Our Services</h2>
+    
+    <h2>Gallery</h2>
+</footer>
+</html>

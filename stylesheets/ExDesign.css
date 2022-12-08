@@ -1,0 +1,23 @@
+body{
+    background-color: thistle;
+}
+.lala{
+    background-color: aqua;
+    font-size: x-large;
+    font-family: cursive;
+}
+#cele{
+color: chocolate;
+}
+footer th{
+    color: royalblue;
+}
+tr th{
+    color: seagreen;
+}
+td:hover{
+    color: yellow;
+}
+td:nth-child(last-child){
+    color: green
+}
